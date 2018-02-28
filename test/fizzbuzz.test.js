@@ -9,9 +9,9 @@ test("Mulitiple of 5 should return 'buzz'", function() {
 });
 
 test("Multiple of 15 should return 'fizzbuzz'", function() {
-  expect(fizzbuzz(15)).toEqual("fizzbuzz");
+  expect(fizzbuzz(30)).toEqual("fizzbuzz");
 });
 
 test("4 should return undefined", function() {
-  expect(fizzbuzz(4)).toEqual(undefined);
+  expect(fizzbuzz(4)).toEqual("4");
 });
