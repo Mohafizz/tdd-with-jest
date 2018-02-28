@@ -8,7 +8,15 @@ kebabize('camelsHave3Humps') // camels-have-humps
 */
 
 function kebabize(input) {
-    
+  var arr = input.split("");
+  var kebabizeArr = [];
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i] === arr[i].toUpperCase()) {
+      kebabizeArr.push("-" + arr[i].toLowerCase());
+    } else {
+      kebabizeArr.push(arr[i]);
+    }
+  }
+  return kebabizeArr.join("");
 }
-
-module.exports = kebabize
+module.exports = kebabize;
